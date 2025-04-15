@@ -1,0 +1,54 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Chercan Crawl4AI Project Rules
+
+## Project Structure
+- Follow modular architecture with clear separation of concerns
+- Use @tasks.md for tracking progress and marking tasks as [DONE]
+- @project_specs.md contains detailed requirements and objectives
+
+## Code Standards
+- Use Python type hints everywhere
+- Follow PEP 8 style guidelines
+- All classes should have docstrings with parameters and return values
+- Create unit tests for all components
+
+## Development Guidelines
+- Implement core components first following @tasks.md sequence
+- Use async/await for all I/O operations
+- Create factory patterns for all strategy implementations
+- Handle errors gracefully with custom exception classes
+
+## Crawl4AI Integration
+- Import Crawl4AI v0.5.0 and utilize its core components:
+  - AsyncWebCrawler for high-performance crawling
+  - BrowserConfig and CrawlerRunConfig for configuration
+  - Multiple crawler strategies (browser-based and HTTP-only)
+  - Deep crawling with configurable strategies (BFS, DFS, Best-First)
+
+## Architecture
+- /crawl4ai - Main package
+  - /core - Base classes and utilities
+  - /config - Configuration handling
+  - /crawlers - Different crawler implementations
+  - /strategies - Crawling strategies (BFS, DFS, Best-First)
+  - /processing - Data extraction and filtering
+  - /exports - Export formats (Markdown, JSON, CSV)
+  - /api - API endpoints
+  - /cli - Command-line interface
+  - /utils - Shared utilities
+
+## Installation Process
+- Run setup.py to initialize project structure
+- Use Python virtual environment for development
+- Install Crawl4AI with: `pip install crawl4ai`
+- Run post-installation: `crawl4ai-setup` and `crawl4ai-doctor`
+
+## Testing & Validation
+- Test on multiple websites and scenarios
+- Validate memory usage and performance
+- Ensure all exported data is properly formatted
+- Verify compatibility with different environments
