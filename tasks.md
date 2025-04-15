@@ -24,7 +24,7 @@
 [DONE] 2.2.2: Implement DFS crawling strategy
 [DONE] 2.2.3: Implement Best-First crawling strategy
 [DONE] 2.2.4: Create strategy factory and selection mechanism
-2.3.1: Implement Playwright browser-based crawler
+[DONE] 2.3.1: Implement Playwright browser-based crawler
 2.3.2: Implement HTTP-only crawler
 2.3.3: Create crawler type selection mechanism
 2.3.4: Add performance monitoring for crawler types

@@ -16,7 +16,7 @@ from crawl4ai.strategies import (
     BestFirstCrawlStrategy,
     StrategyFactory
 )
-from crawl4ai.crawlers import StrategyCrawler
+from crawl4ai.crawlers import StrategyCrawler, PlaywrightCrawler
 
 __version__ = "0.1.0"
 
@@ -36,4 +36,5 @@ __all__ = [
     'BestFirstCrawlStrategy',
     'StrategyFactory',
     'StrategyCrawler',
+    'PlaywrightCrawler',
 ]
