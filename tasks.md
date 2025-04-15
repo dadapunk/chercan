@@ -22,8 +22,8 @@
 [DONE] 2.1.5: Set up session management
 [DONE] 2.2.1: Implement BFS crawling strategy
 [DONE] 2.2.2: Implement DFS crawling strategy
-2.2.3: Implement Best-First crawling strategy
-2.2.4: Create strategy factory and selection mechanism
+[DONE] 2.2.3: Implement Best-First crawling strategy
+[DONE] 2.2.4: Create strategy factory and selection mechanism
 2.3.1: Implement Playwright browser-based crawler
 2.3.2: Implement HTTP-only crawler
 2.3.3: Create crawler type selection mechanism

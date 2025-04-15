@@ -9,7 +9,13 @@ from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CrawlResu
 
 # Import our own modules
 from crawl4ai.core import BaseCrawler, CrawlerSession
-from crawl4ai.strategies import CrawlStrategy, BFSCrawlStrategy, DFSCrawlStrategy
+from crawl4ai.strategies import (
+    CrawlStrategy, 
+    BFSCrawlStrategy, 
+    DFSCrawlStrategy, 
+    BestFirstCrawlStrategy,
+    StrategyFactory
+)
 from crawl4ai.crawlers import StrategyCrawler
 
 __version__ = "0.1.0"
@@ -27,5 +33,7 @@ __all__ = [
     'CrawlStrategy',
     'BFSCrawlStrategy',
     'DFSCrawlStrategy',
+    'BestFirstCrawlStrategy',
+    'StrategyFactory',
     'StrategyCrawler',
 ]

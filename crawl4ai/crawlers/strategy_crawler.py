@@ -12,7 +12,13 @@ from urllib.parse import urljoin, urlparse
 
 from crawl4ai import CrawlResult
 from crawl4ai.core.crawler import BaseCrawler
-from crawl4ai.strategies import CrawlStrategy, BFSCrawlStrategy
+from crawl4ai.strategies import (
+    CrawlStrategy, 
+    BFSCrawlStrategy, 
+    DFSCrawlStrategy,
+    BestFirstCrawlStrategy,
+    StrategyFactory
+)
 from crawl4ai.core.exceptions import StrategyError, CrawlerError
 
 
@@ -25,29 +31,52 @@ class StrategyCrawler(BaseCrawler):
     
     def __init__(
         self,
-        strategy: Optional[CrawlStrategy] = None,
+        strategy: Optional[Union[CrawlStrategy, str]] = None,
+        strategy_options: Optional[Dict[str, Any]] = None,
         **kwargs,
     ):
         """Initialize the strategy crawler.
         
         Args:
-            strategy: Crawling strategy to use (defaults to BFS)
+            strategy: Crawling strategy to use (either a strategy instance or a strategy name)
+            strategy_options: Options for the strategy (if strategy is a name)
             **kwargs: Additional arguments to pass to BaseCrawler.__init__()
         """
         super().__init__(**kwargs)
         
         # Set up strategy
-        self.strategy = strategy or BFSCrawlStrategy()
-        self.logger.info(f"Using crawling strategy: {self.strategy.__class__.__name__}")
+        strategy_options = strategy_options or {}
+        
+        if isinstance(strategy, str):
+            # Create strategy from name using factory
+            self.strategy = StrategyFactory.create_strategy(strategy, **strategy_options)
+            self.logger.info(f"Created {strategy} crawling strategy")
+        elif isinstance(strategy, CrawlStrategy):
+            # Use provided strategy instance
+            self.strategy = strategy
+            self.logger.info(f"Using provided crawling strategy: {strategy.__class__.__name__}")
+        else:
+            # Default to BFS
+            self.strategy = BFSCrawlStrategy()
+            self.logger.info(f"Using default BFS crawling strategy")
     
-    def set_strategy(self, strategy: CrawlStrategy) -> None:
+    def set_strategy(self, strategy: Union[CrawlStrategy, str], **options) -> None:
         """Set the crawling strategy.
         
         Args:
-            strategy: Crawling strategy to use
+            strategy: Crawling strategy to use (either a strategy instance or a strategy name)
+            **options: Options for the strategy (if strategy is a name)
         """
-        self.strategy = strategy
-        self.logger.info(f"Changed crawling strategy to: {strategy.__class__.__name__}")
+        if isinstance(strategy, str):
+            # Create strategy from name using factory
+            self.strategy = StrategyFactory.create_strategy(strategy, **options)
+            self.logger.info(f"Changed to {strategy} crawling strategy")
+        elif isinstance(strategy, CrawlStrategy):
+            # Use provided strategy instance
+            self.strategy = strategy
+            self.logger.info(f"Changed to provided crawling strategy: {strategy.__class__.__name__}")
+        else:
+            raise TypeError(f"Strategy must be a string or CrawlStrategy instance, got {type(strategy)}")
     
     async def crawl_with_strategy(
         self,
