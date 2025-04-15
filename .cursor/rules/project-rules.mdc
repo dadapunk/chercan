@@ -28,6 +28,8 @@ alwaysApply: true
   - BrowserConfig and CrawlerRunConfig for configuration
   - Multiple crawler strategies (browser-based and HTTP-only)
   - Deep crawling with configurable strategies (BFS, DFS, Best-First)
+  - LLMConfig system for unified LLM provider configuration
+  - LLMContentFilter for high-quality markdown generation
 
 ## Architecture
 - /crawl4ai - Main package
@@ -36,13 +38,16 @@ alwaysApply: true
   - /crawlers - Different crawler implementations
   - /strategies - Crawling strategies (BFS, DFS, Best-First)
   - /processing - Data extraction and filtering
+    - /extractors - CSS, XPath, and LLM-based extractors
+    - /filters - Content filtering implementations
   - /exports - Export formats (Markdown, JSON, CSV)
   - /api - API endpoints
   - /cli - Command-line interface
   - /utils - Shared utilities
+  - /docker - Docker deployment configurations
 
 ## Installation Process
-- Run setup.py to initialize project structure
+- Run setup_project.py to initialize project structure
 - Use Python virtual environment for development
 - Install Crawl4AI with: `pip install crawl4ai`
 - Run post-installation: `crawl4ai-setup` and `crawl4ai-doctor`
@@ -52,3 +57,4 @@ alwaysApply: true
 - Validate memory usage and performance
 - Ensure all exported data is properly formatted
 - Verify compatibility with different environments
+- Create example implementations for e-commerce, news, and social media
