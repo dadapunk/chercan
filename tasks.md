@@ -26,7 +26,7 @@
 [DONE] 2.2.4: Create strategy factory and selection mechanism
 [DONE] 2.3.1: Implement Playwright browser-based crawler
 [DONE] 2.3.2: Implement HTTP-only crawler
-2.3.3: Create crawler type selection mechanism
+[DONE] 2.3.3: Create crawler type selection mechanism
 2.3.4: Add performance monitoring for crawler types
 
 ## 3. Data Processing Components
