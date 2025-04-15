@@ -23,6 +23,10 @@ from crawl4ai.crawlers import (
     CrawlerFactory,
     CrawlerType
 )
+from crawl4ai.extractors import (
+    BaseExtractor,
+    CSSExtractor
+)
 
 __version__ = "0.1.0"
 
@@ -46,4 +50,6 @@ __all__ = [
     'HTTPCrawler',
     'CrawlerFactory',
     'CrawlerType',
+    'BaseExtractor',
+    'CSSExtractor',
 ]
