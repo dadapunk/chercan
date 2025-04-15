@@ -2,6 +2,17 @@
 
 This module provides an HTTP-only crawler that doesn't rely on browser automation,
 making it faster but with limited JavaScript support.
+
+Key features:
+- Fast HTTP-based crawling without browser overhead
+- Support for custom headers, cookies, and user agents
+- Automatic retry mechanism for failed requests
+- Efficient link extraction and following
+- Support for different content types (HTML, JSON, XML)
+- Configurable depth for crawling linked pages
+
+Note that this crawler has limited support for JavaScript-heavy websites. For websites
+that require JavaScript execution, use the PlaywrightCrawler instead.
 """
 from typing import Dict, List, Optional, Any, Union
 import asyncio
@@ -24,6 +35,25 @@ class HTTPCrawler(BaseCrawler):
     
     This crawler is faster than browser-based crawlers but has limited JavaScript support.
     It's suitable for crawling static websites or API endpoints.
+    
+    Typical usage:
+    ```python
+    async with HTTPCrawler(
+        user_agent="Custom User Agent",
+        timeout=30,
+        retry_count=3
+    ) as crawler:
+        # Fetch a single page
+        page = await crawler.fetch_page("https://example.com")
+        
+        # Crawl with depth
+        results = await crawler.crawl(
+            "https://example.com",
+            depth=2,
+            follow_links=True,
+            max_pages=10
+        )
+    ```
     """
     
     def __init__(
@@ -35,6 +65,7 @@ class HTTPCrawler(BaseCrawler):
         cookies: Optional[Dict[str, str]] = None,
         cache_dir: Optional[Union[str, Path]] = None,
         crawler_config: Optional[Dict[str, Any]] = None,
+        rate_limit: Optional[float] = None,
     ):
         """Initialize the HTTP-only crawler.
         
@@ -46,6 +77,7 @@ class HTTPCrawler(BaseCrawler):
             cookies: Cookies to include in requests
             cache_dir: Directory to use for caching responses
             crawler_config: Additional crawler configuration options
+            rate_limit: Requests per second rate limit (if None, no rate limiting)
         """
         super().__init__(
             user_agent=user_agent,
@@ -60,6 +92,12 @@ class HTTPCrawler(BaseCrawler):
         
         # Will be initialized in the context manager
         self._session = None
+        self.rate_limit = rate_limit
+        self.rate_limiter = None
+        
+        if rate_limit is not None:
+            from crawl4ai.utils.rate_limiter import RateLimiter
+            self.rate_limiter = RateLimiter(rate_limit)
         
     async def __aenter__(self):
         """Initialize the HTTP session when entering the context manager."""
@@ -103,9 +141,14 @@ class HTTPCrawler(BaseCrawler):
             
         Raises:
             RequestError: If the request fails
+            CrawlerError: If the crawler is not initialized
         """
         if not self._session:
             raise CrawlerError("HTTP session not initialized, use async with context")
+            
+        # Apply rate limiting if configured
+        if self.rate_limiter:
+            await self.rate_limiter.acquire()
             
         retry_count = 0
         while retry_count <= self.retry_count:
@@ -201,6 +244,7 @@ class HTTPCrawler(BaseCrawler):
             
         Raises:
             CrawlerError: If the crawler is not initialized or an error occurs
+            RequestError: If an HTTP request fails
         """
         if not self._session:
             raise CrawlerError("HTTP session not initialized, use async with context")
