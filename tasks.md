@@ -4,8 +4,8 @@
 
 [DONE] 1.1.1: Create project directory structure
 [DONE] 1.1.2: Set up virtual environment
-1.1.3: Install Crawl4AI v0.5.0 with all dependencies
-1.1.4: Run `crawl4ai-setup` and `crawl4ai-doctor` post-installation commands
+[DONE] 1.1.3: Install Crawl4AI v0.5.0 with all dependencies
+[DONE] 1.1.4: Run `crawl4ai-setup` and `crawl4ai-doctor` post-installation commands
 [DONE] 1.1.5: Create simple verification script to test installation
 [DONE] 1.1.6: Add LICENSE file with Apache 2.0 attribution clause
 [DONE] 1.2.1: Create configuration module for global settings
@@ -15,11 +15,11 @@
 
 ## 2. Crawler Implementation
 
-2.1.1: Create base crawler class using AsyncWebCrawler
-2.1.2: Implement asynchronous crawling functionality
-2.1.3: Configure BrowserConfig and CrawlerRunConfig
-2.1.4: Add configurable request headers and user agents
-2.1.5: Set up session management
+[DONE] 2.1.1: Create base crawler class using AsyncWebCrawler
+[DONE] 2.1.2: Implement asynchronous crawling functionality
+[DONE] 2.1.3: Configure BrowserConfig and CrawlerRunConfig
+[DONE] 2.1.4: Add configurable request headers and user agents
+[DONE] 2.1.5: Set up session management
 2.2.1: Implement BFS crawling strategy
 2.2.2: Implement DFS crawling strategy
 2.2.3: Implement Best-First crawling strategy
