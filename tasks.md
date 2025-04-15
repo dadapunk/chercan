@@ -20,8 +20,8 @@
 [DONE] 2.1.3: Configure BrowserConfig and CrawlerRunConfig
 [DONE] 2.1.4: Add configurable request headers and user agents
 [DONE] 2.1.5: Set up session management
-2.2.1: Implement BFS crawling strategy
-2.2.2: Implement DFS crawling strategy
+[DONE] 2.2.1: Implement BFS crawling strategy
+[DONE] 2.2.2: Implement DFS crawling strategy
 2.2.3: Implement Best-First crawling strategy
 2.2.4: Create strategy factory and selection mechanism
 2.3.1: Implement Playwright browser-based crawler
