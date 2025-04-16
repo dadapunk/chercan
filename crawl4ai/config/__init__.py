@@ -13,6 +13,7 @@ from .crawler_config import (
     load_browser_config,
     load_crawler_config,
 )
+from .llm_config import LLMConfig
 
 # Load environment variables from .env file if it exists
 load_env_file()
@@ -28,4 +29,5 @@ __all__ = [
     'CrawlerConfiguration',
     'load_browser_config',
     'load_crawler_config',
+    'LLMConfig',
 ]

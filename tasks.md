@@ -31,9 +31,9 @@
 
 ## 3. Data Processing Components
 
-3.1.1: Implement CSS selector-based extraction
-3.1.2: Implement XPath-based extraction
-3.1.3: Set up LLM-based extraction with LLMConfig
+[DONE] 3.1.1: Implement CSS selector-based extraction
+[DONE] 3.1.2: Implement XPath-based extraction
+[DONE] 3.1.3: Set up LLM-based extraction with LLMConfig
 3.1.4: Create extraction strategy factory
 3.2.1: Implement basic content filtering
 3.2.2: Set up LLMContentFilter integration

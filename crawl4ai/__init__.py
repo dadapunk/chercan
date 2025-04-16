@@ -25,8 +25,12 @@ from crawl4ai.crawlers import (
 )
 from crawl4ai.extractors import (
     BaseExtractor,
-    CSSExtractor
+    CSSExtractor,
+    RegExExtractor,
+    XPathExtractor,
+    LLMExtractor
 )
+from crawl4ai.config import LLMConfig
 
 __version__ = "0.1.0"
 
@@ -52,4 +56,8 @@ __all__ = [
     'CrawlerType',
     'BaseExtractor',
     'CSSExtractor',
+    'RegExExtractor',
+    'XPathExtractor',
+    'LLMExtractor',
+    'LLMConfig',
 ]
