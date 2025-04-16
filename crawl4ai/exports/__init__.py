@@ -9,6 +9,7 @@ from crawl4ai.exports.markdown_exporter import MarkdownExporter
 from crawl4ai.exports.json_exporter import JSONExporter
 from crawl4ai.exports.html_exporter import HTMLExporter
 from crawl4ai.exports.csv_exporter import CSVExporter
+from crawl4ai.exports.db_exporter import DatabaseExporter, DBConnector, SQLiteConnector, MongoDBConnector
 from crawl4ai.exports.factory import ExporterFactory, ExportFormat
 
 __all__ = [
@@ -17,6 +18,10 @@ __all__ = [
     "JSONExporter",
     "HTMLExporter",
     "CSVExporter",
+    "DatabaseExporter",
+    "DBConnector",
+    "SQLiteConnector", 
+    "MongoDBConnector",
     "ExporterFactory",
     "ExportFormat"
 ]

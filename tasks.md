@@ -44,7 +44,7 @@
 [DONE] 3.3.3: Implement CSV export
 [DONE] 3.3.4: Implement HTML export
 [DONE] 3.3.5: Create exporter factory
-3.3.6: Create database storage connectors
+[DONE] 3.3.6: Create database storage connectors
 
 ## 4. Advanced Features
 

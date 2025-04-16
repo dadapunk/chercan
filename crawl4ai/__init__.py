@@ -8,13 +8,16 @@ It is built on top of Crawl4AI v0.5.0 and provides a simple interface for common
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CrawlResult
 
 # Import our own modules
-from crawl4ai.core import BaseCrawler, CrawlerSession
+from crawl4ai.core import BaseCrawler, CrawlerSession, AsyncCrawler, Page, Request, Response
 from crawl4ai.strategies import (
     CrawlStrategy, 
     BFSCrawlStrategy, 
     DFSCrawlStrategy, 
     BestFirstCrawlStrategy,
-    StrategyFactory
+    StrategyFactory,
+    BreadthFirstStrategy,
+    DepthFirstStrategy,
+    PriorityStrategy
 )
 from crawl4ai.crawlers import (
     StrategyCrawler, 
@@ -46,6 +49,10 @@ from crawl4ai.exports import (
     JSONExporter,
     HTMLExporter,
     CSVExporter,
+    DatabaseExporter,
+    DBConnector,
+    SQLiteConnector,
+    MongoDBConnector,
     ExporterFactory,
     ExportFormat
 )
@@ -92,4 +99,11 @@ __all__ = [
     'CSVExporter',
     'ExporterFactory',
     'ExportFormat',
+    'DatabaseExporter',
+    'DBConnector',
+    'SQLiteConnector',
+    'MongoDBConnector',
+    'BreadthFirstStrategy',
+    'DepthFirstStrategy',
+    'PriorityStrategy',
 ]
