@@ -36,9 +36,19 @@ from crawl4ai.processing.filters import (
     BasicContentFilter,
     LLMContentFilter,
     PruningRule,
-    PruningContentFilter
+    PruningContentFilter,
+    FilterPipeline
 )
 from crawl4ai.config import LLMConfig
+from crawl4ai.exports import (
+    BaseExporter, 
+    MarkdownExporter,
+    JSONExporter,
+    HTMLExporter,
+    CSVExporter,
+    ExporterFactory,
+    ExportFormat
+)
 
 __version__ = "0.1.0"
 
@@ -73,5 +83,13 @@ __all__ = [
     'LLMContentFilter',
     'PruningRule',
     'PruningContentFilter',
+    'FilterPipeline',
     'LLMConfig',
+    'BaseExporter',
+    'MarkdownExporter',
+    'JSONExporter',
+    'HTMLExporter',
+    'CSVExporter',
+    'ExporterFactory',
+    'ExportFormat',
 ]

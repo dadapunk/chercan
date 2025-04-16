@@ -38,11 +38,13 @@
 [DONE] 3.2.1: Implement basic content filtering
 [DONE] 3.2.2: Set up LLMContentFilter integration
 [DONE] 3.2.3: Add PruningContentFilter functionality
-3.2.4: Create custom filter combinations
+[DONE] 3.2.4: Create custom filter combinations
 3.3.1: Implement markdown export
-3.3.2: Implement JSON export
-3.3.3: Implement CSV export
-3.3.4: Create database storage connectors
+[DONE] 3.3.2: Implement JSON export
+[DONE] 3.3.3: Implement CSV export
+[DONE] 3.3.4: Implement HTML export
+[DONE] 3.3.5: Create exporter factory
+3.3.6: Create database storage connectors
 
 ## 4. Advanced Features
 
