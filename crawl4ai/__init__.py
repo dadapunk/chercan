@@ -28,7 +28,15 @@ from crawl4ai.extractors import (
     CSSExtractor,
     RegExExtractor,
     XPathExtractor,
-    LLMExtractor
+    LLMExtractor,
+    ExtractorFactory
+)
+from crawl4ai.processing.filters import (
+    BaseContentFilter,
+    BasicContentFilter,
+    LLMContentFilter,
+    PruningRule,
+    PruningContentFilter
 )
 from crawl4ai.config import LLMConfig
 
@@ -59,5 +67,11 @@ __all__ = [
     'RegExExtractor',
     'XPathExtractor',
     'LLMExtractor',
+    'ExtractorFactory',
+    'BaseContentFilter',
+    'BasicContentFilter',
+    'LLMContentFilter',
+    'PruningRule',
+    'PruningContentFilter',
     'LLMConfig',
 ]

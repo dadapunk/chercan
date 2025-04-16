@@ -8,6 +8,7 @@ from .css_extractor import CSSExtractor
 from .regex_extractor import RegExExtractor
 from .xpath_extractor import XPathExtractor
 from .llm_extractor import LLMExtractor
+from .factory import ExtractorFactory
 
 __all__ = [
     'BaseExtractor',
@@ -15,4 +16,5 @@ __all__ = [
     'RegExExtractor',
     'XPathExtractor',
     'LLMExtractor',
+    'ExtractorFactory',
 ] 

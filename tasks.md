@@ -34,10 +34,10 @@
 [DONE] 3.1.1: Implement CSS selector-based extraction
 [DONE] 3.1.2: Implement XPath-based extraction
 [DONE] 3.1.3: Set up LLM-based extraction with LLMConfig
-3.1.4: Create extraction strategy factory
-3.2.1: Implement basic content filtering
-3.2.2: Set up LLMContentFilter integration
-3.2.3: Add PruningContentFilter functionality
+[DONE] 3.1.4: Create extraction strategy factory
+[DONE] 3.2.1: Implement basic content filtering
+[DONE] 3.2.2: Set up LLMContentFilter integration
+[DONE] 3.2.3: Add PruningContentFilter functionality
 3.2.4: Create custom filter combinations
 3.3.1: Implement markdown export
 3.3.2: Implement JSON export
