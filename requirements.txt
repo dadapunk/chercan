@@ -1,12 +1,12 @@
 # Dependencies for Microsoft Course Scraper
-crawl4ai>=0.5.0
+crawl4ai[all]>=0.5.0
+pydantic>=2.0.0
+python-dotenv>=0.19.0
+pytest>=7.0.0  # for testing
 aiohttp>=3.8.0
 beautifulsoup4>=4.9.0
 lxml>=4.6.0
-python-dotenv>=0.20.0
-pytest>=7.0.0
 pytest-asyncio>=0.18.0
 mypy>=0.950
 black>=22.3.0
-ruff>=0.0.225
-pydantic>=2.0.0 
+ruff>=0.0.225 

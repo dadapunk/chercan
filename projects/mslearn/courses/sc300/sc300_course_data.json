@@ -1,0 +1,305 @@
+{
+  "code": "SC-300",
+  "title": "SC-300: Implement an identity management solution",
+  "description": "Learn to create and manage your initial Microsoft Entra implementation and configure the users, groups, and external identities you\u2018ll use to run your solution. Aligned to SC-300 Exam.",
+  "level": "Intermediate",
+  "prerequisites": [],
+  "modules": [
+    {
+      "title": "Implement initial configuration of Microsoft Entra ID",
+      "description": "Learn to create an initial Microsoft Entra ID configuration to ensure all the identity solutions available in Azure are ready to use.",
+      "duration": "50 min",
+      "units": [
+        {
+          "title": "Introduction",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/1-introduction/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 2",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/2-configure-company-brand/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 3",
+          "duration": "7 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/3-configure-manage-roles/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 4",
+          "duration": "8 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/4-exercise-manage-users-roles/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 5",
+          "duration": "7 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/5-configure-delegation-administrative-units/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 6",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/6-analyze-azure-ad-role-permissions/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 7",
+          "duration": "10 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/7-configure-manage-custom-domains/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 8",
+          "duration": "4 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/8-configure-tenant-wide-options/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 9",
+          "duration": "4 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/9-exercise-set-tenant-wide-properties/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 10",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/10-knowledge-check/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Summary",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-azure-active-directory/11-summary-resources/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Introduction",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/1-introduction/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 13",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/2-users/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        }
+      ],
+      "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-microsoft-entra/"
+    },
+    {
+      "title": "Create, configure, and manage identities",
+      "description": "Learn to create, configure, and manage users, groups, and devices in Microsoft Entra ID.",
+      "duration": "40 min",
+      "units": [
+        {
+          "title": "Unit 1",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/3-exercise-assign-licenses-users/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 2",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/4-exercise-restore-remove-deleted-users/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 3",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/5-groups/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 4",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/6-exercise-add-groups-azure-active-directory/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 5",
+          "duration": "9 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/7-configure-manage-device-registration/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 6",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/8-manage-licenses/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 7",
+          "duration": "10 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/9-exercise-change-group-license-assignments/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 8",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/10-exercise-change-user-license-assignments/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 9",
+          "duration": "4 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/11-create-custom-security-attributes/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 10",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/12-explore-automatic-user-creation/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 11",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/13-knowledge-check/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Summary",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/create-configure-manage-identities/14-summary-resources/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Introduction",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/1-introduction/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        }
+      ],
+      "url": ""
+    },
+    {
+      "title": "Implement and manage external identities",
+      "description": "Learn to implement and manage external identities in Microsoft Entra ID.",
+      "duration": "35 min",
+      "units": [
+        {
+          "title": "Unit 1",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/2-describe-guest-access-business-to-business-accounts/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 2",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/3-collaboration/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 3",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/4-exercise-configure-external-collaboration/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 4",
+          "duration": "4 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/5-invite-external-users-individually-bulk/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 5",
+          "duration": "5 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/6-exercise-add-guest-users-to-directory/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 6",
+          "duration": "7 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/7-exercise-invite-guest-users-bulk/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 7",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/8-demo-invite-guest-users-to-app/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 8",
+          "duration": "9 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/9-user-accounts-azure-active-directory/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 9",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/10-manage-external-users-microsoft-365-workloads/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 10",
+          "duration": "8 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/11-exercise-explore-dynamic-groups/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 11",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/12-implement-manager-entra-verified-id/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 12",
+          "duration": "10 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/13-configure-identity-providers/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 13",
+          "duration": "3 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/14-implement-cross-tenant-access-controls/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        }
+      ],
+      "url": ""
+    },
+    {
+      "title": "Implement and manage hybrid identity",
+      "description": "Learn to implement and manage hybrid identity with Microsoft Entra ID.",
+      "duration": "30 min",
+      "units": [
+        {
+          "title": "Unit 1",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/15-knowledge-check/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Summary",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-external-identities/16-summary-resources/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Introduction",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/1-introduction/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 4",
+          "duration": "12 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/2-plan-design-implement-azure-active-directory-connect/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 5",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/3-password-hash-synchronization/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 6",
+          "duration": "8 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/4-pass-through-authentication/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 7",
+          "duration": "14 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/5-demo-manage-pass-through-authentication-seamless-single-sign/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 8",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/6-federation/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 9",
+          "duration": "10 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/7-trouble-shoot-synchronization-errors/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 10",
+          "duration": "12 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/8-implement-azure-active-directory-connect-health/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 11",
+          "duration": "7 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/9-manage-azure-active-directory-connect-health/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Unit 12",
+          "duration": "2 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/10-knowledge-check/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        },
+        {
+          "title": "Summary",
+          "duration": "1 min",
+          "url": "https://learn.microsoft.com/en-gb/training/modules/implement-manage-hybrid-identity/11-summary-resources/?ns-enrollment-type=learningpath&amp;ns-enrollment-id=learn.wwl.implement-identity-management-solution"
+        }
+      ],
+      "url": ""
+    }
+  ],
+  "metadata": {
+    "data_source": "llm_extraction",
+    "extraction_successful": true
+  }
+}

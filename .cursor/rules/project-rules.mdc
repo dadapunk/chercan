@@ -9,6 +9,7 @@ alwaysApply: true
 - Follow modular architecture with clear separation of concerns
 - Use @tasks.md for tracking progress and marking tasks as [DONE]
 - @project_specs.md contains detailed requirements and objectives
+- Follow the official Crwl4AI documentation added to the cursor IDE
 
 ## Code Standards
 - Use Python type hints everywhere

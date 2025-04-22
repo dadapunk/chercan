@@ -1,0 +1,112 @@
+# Chercan Crawl4AI Project Rules
+
+## License Requirements
+- Project uses Crawl4AI v0.5.0 under Apache 2.0 license with attribution clause
+- All distributions must clearly attribute Crawl4AI
+- See LICENSE file for full legal text and requirements
+
+## Development Philosophy
+- Start with specific, working implementations
+- Build abstractions from proven patterns
+- Document everything, especially successful approaches
+- Test thoroughly before generalizing
+
+## Documentation Structure
+Following Crawl4AI's organization:
+- Setup & Installation
+  - Basic setup instructions
+  - Environment configuration
+  - Post-installation verification
+- Quick Start
+  - First crawl implementation
+  - Markdown generation examples
+  - Basic extraction strategies
+- Core Components
+  - Single-page crawling
+  - Browser/crawler parameters
+  - Content filtering and caching
+- Advanced Features
+  - Link & media handling
+  - Lazy loading
+  - Authentication & proxies
+  - Session management
+- Extraction Strategies
+  - No-LLM approaches (CSS, XPath)
+  - LLM-based strategies
+  - Chunking and clustering
+- API Reference
+  - Class documentation
+  - Method specifications
+  - Configuration options
+
+## Project Structure
+- Begin with focused implementations in `/examples`
+- Gradually move common patterns to core modules
+- Keep working examples as reference implementations
+- Use @tasks.md for tracking progress
+- @project_specs.md contains detailed requirements and objectives
+
+## Code Standards
+- Use Python type hints everywhere
+- Follow PEP 8 style guidelines
+- All classes should have docstrings with parameters and return values
+- Create unit tests for all components
+
+## Development Guidelines
+- Start with concrete implementations
+- Document successful patterns and approaches
+- Extract reusable components as patterns emerge
+- Handle errors gracefully with custom exception classes
+
+## Crawl4AI Integration
+- Import Crawl4AI v0.5.0 and utilize its core components:
+  - AsyncWebCrawler for high-performance crawling
+  - BrowserConfig and CrawlerRunConfig for configuration
+  - Multiple crawler strategies (browser-based and HTTP-only)
+  - Deep crawling with configurable strategies (BFS, DFS, Best-First)
+  - LLMConfig system for unified LLM provider configuration
+  - LLMContentFilter for high-quality markdown generation
+  - DefaultMarkdownGenerator with content filters
+  - Support for both open-source and closed-source LLM providers
+
+## Initial Architecture
+- /examples - Specific implementations
+  - /mslearn - MS Learn course extraction
+  - /patterns - Successful extraction patterns
+- /crawl4ai - Core package (evolving)
+  - /core - Base classes and utilities
+  - /config - Configuration handling
+  - /crawlers - Different crawler implementations
+  - /strategies - Crawling strategies
+  - /processing - Data extraction and filtering
+  - /exports - Export formats
+  - /api - API endpoints (future)
+  - /cli - Command-line interface
+  - /utils - Shared utilities
+
+## Installation Process
+- Install full package: `pip install "crawl4ai[all]"`
+- Use Python virtual environment for development
+- Run post-installation: `crawl4ai-setup` and `crawl4ai-doctor`
+- Verify installation with basic test script
+
+## Configuration Standards
+- Use environment variables for sensitive data
+- Configure browser settings via BrowserConfig
+- Set up CrawlerRunConfig for each run
+- Use LLMConfig for model configuration
+- Implement content filtering where needed
+
+## Testing & Validation
+- Test each specific implementation thoroughly
+- Validate with real-world data
+- Document performance characteristics
+- Create example implementations as needed
+- Start with MS Learn course extraction example
+
+## LLM Integration
+- Support both open-source (ollama/llama3.3) and closed-source (OpenAI) models
+- Use appropriate temperature and token settings
+- Implement proper error handling for API calls
+- Cache results when appropriate
+- Follow provider-specific best practices 

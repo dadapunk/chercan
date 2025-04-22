@@ -1,0 +1,79 @@
+{
+  "code": "SC-300",
+  "title": "[MOCK] Implement an identity management solution",
+  "description": "[MOCK DESCRIPTION] This is placeholder text for the course description. Enable LLM extraction for real content.",
+  "level": "[MOCK] Intermediate",
+  "prerequisites": [
+    "[MOCK] Prerequisite 1",
+    "[MOCK] Prerequisite 2",
+    "[MOCK] Prerequisite 3"
+  ],
+  "modules": [
+    {
+      "title": "[MOCK] Module 1: Initial configuration of Microsoft Entra ID",
+      "description": "[MOCK DESCRIPTION] This is placeholder text for the first module",
+      "duration": "[MOCK] XX min",
+      "units": [
+        {
+          "title": "[MOCK] Unit 1",
+          "duration": "[MOCK] X min",
+          "url": null
+        },
+        {
+          "title": "[MOCK] Unit 2",
+          "duration": "[MOCK] X min",
+          "url": null
+        }
+      ],
+      "url": "https://learn.microsoft.com/en-gb/training/modules/implement-initial-configuration-of-microsoft-entra/"
+    },
+    {
+      "title": "[MOCK] Module 2: Create, configure, and manage identities",
+      "description": "[MOCK DESCRIPTION] This is placeholder text for the second module",
+      "duration": "[MOCK] XX min",
+      "units": [
+        {
+          "title": "[MOCK] Unit 1",
+          "duration": "[MOCK] X min",
+          "url": null
+        },
+        {
+          "title": "[MOCK] Unit 2",
+          "duration": "[MOCK] X min",
+          "url": null
+        }
+      ],
+      "url": ""
+    },
+    {
+      "title": "[MOCK] Module 3: Implement and manage external identities",
+      "description": "[MOCK DESCRIPTION] This is placeholder text for the third module",
+      "duration": "[MOCK] XX min",
+      "units": [
+        {
+          "title": "[MOCK] Unit 1",
+          "duration": "[MOCK] X min",
+          "url": null
+        }
+      ],
+      "url": ""
+    },
+    {
+      "title": "[MOCK] Module 4: Implement and manage hybrid identity",
+      "description": "[MOCK DESCRIPTION] This is placeholder text for the fourth module",
+      "duration": "[MOCK] XX min",
+      "units": [
+        {
+          "title": "[MOCK] Unit 1",
+          "duration": "[MOCK] X min",
+          "url": null
+        }
+      ],
+      "url": ""
+    }
+  ],
+  "metadata": {
+    "data_source": "mock_data",
+    "extraction_failed": true
+  }
+}

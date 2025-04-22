@@ -2,74 +2,119 @@ Chercan
 
 # Project Overview:
 
-The goal of this project is to develop a base framework for automated data collection through web scraping and crawling using Crawl4AI v0.5.0. The system is designed to be modular, flexible, and reusable, allowing quick adaptation to extract information from various websites based on specific task requirements.
+The goal of this project is to develop a practical web scraping solution that will evolve into a reusable framework, using Crawl4AI v0.5.0 as its foundation. The development will follow an incremental approach, starting with specific implementations and gradually expanding into a more generic framework.
 
-Instead of being a complete platform, this project will serve as a base code that can be modified and extended easily for any new use case or website. As a generic template, its structure will allow focus solely on the specific aspects of each task without rewriting the entire code every time.
+## Development Phases:
 
-All tasks are in the tasks.md file. Once you have completed a task, mark it as [DONE] in the file (at the beginning of the task) and ask to move on to the next one.
+### Phase 1: Concrete Implementation
 
-## Main Objectives of the Project:
+- Develop specific scrapers for well-defined use cases (starting with MS Learn courses)
+- Focus on getting working end-to-end solutions
+- Validate extraction approaches with real-world data
+- Document successful patterns and challenges
 
-### 1. Automation of Scraping and Crawling Tasks:
+### Phase 2: Pattern Recognition & Refactoring
 
-- Leverage Crawl4AI's AsyncWebCrawler for high-performance, asynchronous web crawling
-- Utilize the new deep crawling capabilities with configurable strategies (BFS, DFS, Best-First)
-- Implement custom filters and URL scoring for targeted crawls
+- Identify common patterns from working implementations
+- Extract reusable components
+- Create initial abstractions
+- Develop basic framework structure
 
-### 2. Modularity:
+### Phase 3: Framework Development
 
-- Utilize Crawl4AI's multiple crawler strategies (browser-based Playwright or faster HTTP-only crawler)
-- Implement the new LLMConfig system for unified configuration of LLM providers
-- Structure code with modular components that can be adjusted independently
+- Build modular architecture based on proven patterns
+- Implement generic interfaces
+- Create plugin system for different site types
+- Develop comprehensive documentation
 
-### 3. Flexibility for Different Sites:
+## Main Objectives:
 
-- Apply site-specific configurations through Crawl4AI's configurable crawlers
-- Implement memory-adaptive dispatcher for handling various site sizes and complexities
-- Use proxy rotation strategies when needed for accessing different websites
+### 1. Initial Implementation Success:
 
-### 4. Scalability:
+- Create working scrapers for specific use cases
+- Validate Crawl4AI integration approaches
+- Document successful patterns
+- Build test cases with real data
 
-- Implement Docker deployment options for scalable, self-contained service
-- Utilize Crawl4AI's built-in API endpoints with optional JWT authentication
-- Configure memory-adaptive dispatching to handle large-scale crawls efficiently
+### 2. Modularity Through Experience:
 
-### 5. Standardized Export Format:
+- Identify natural separation points from working code
+- Extract common patterns into reusable modules
+- Create practical abstractions based on real usage
 
-- Generate clean markdown perfect for RAG pipelines or direct LLM ingestion
-- Enable structured extraction using CSS, XPath, or LLM-based extraction
-- Support for exporting data in various formats (JSON, CSV, database storage)
+### 3. Practical Flexibility:
 
-### 6. Base Code for Specific Tasks:
+- Start with site-specific solutions
+- Gradually abstract common patterns
+- Maintain working examples as reference implementations
 
-- Implement the new CLI interface for quick interaction and configuration
-- Set up PDF processing capabilities for text, image, and metadata extraction
-- Configure URL redirection tracking and robots.txt compliance
+### 4. Scalability Through Testing:
 
-### 7. Adaptability and Simplicity:
+- Test with real-world scenarios
+- Identify performance bottlenecks
+- Implement practical optimizations
+- Document scaling patterns
 
-- Utilize Crawl4AI's improved error handling and stability features
-- Implement LLM-powered schema generation for automatic extraction templates
-- Configure LLMContentFilter for high-quality, focused markdown generation
+### 5. Export Format Evolution:
+
+- Start with specific output needs
+- Standardize based on common requirements
+- Support multiple format options
+- Enable custom formatters
+
+### 6. Framework Growth:
+
+- Begin with command-line tools for specific tasks
+- Expand to general-purpose utilities
+- Add configuration options based on real needs
+- Build API layer for automation
+
+### 7. Adaptability Through Practice:
+
+- Learn from specific implementations
+- Document successful approaches
+- Create practical guidelines
+- Build reusable components
 
 ### 8. Two-Phase Extraction Approach:
 
-- **Phase 1 - Pattern Learning**: Use LLM to identify patterns, selectors, and data locations
-- **Phase 2 - Direct Extraction**: Apply learned patterns for efficient extraction without LLM dependency
-- Store extraction configurations for reuse and continual refinement
-- Implement incremental updates by comparing extracted patterns against known patterns
+- Start with LLM-based extraction for quick results
+- Document successful patterns
+- Create pattern storage for reuse
+- Implement optimized direct extraction
 
 ## Implementation Approach:
 
-1. **Core Configuration**: Set up Crawl4AI with the Apache 2.0 license attribution requirements
-2. **Crawler Selection**: Implement both browser-based and HTTP-only crawlers for different use cases
-3. **Data Processing Pipeline**: Configure extraction, filtering, and export processes
-4. **Pattern Learning System**: Implement LLM-based pattern identification and selector generation
-5. **Pattern Storage**: Create persistence layer for storing identified extraction patterns
-6. **Direct Extraction**: Build efficient extraction pipeline using stored patterns without LLM dependency
-7. **Deployment Options**: Create Docker configurations for scalable deployment
-8. **CLI Integration**: Implement command-line interfaces for easy operation
-9. **Documentation**: Create comprehensive documentation for customization and extension
+1. **Start Small**: Begin with specific, well-defined scraping tasks
+2. **Document Everything**: Keep detailed notes of what works and what doesn't
+3. **Identify Patterns**: Look for commonalities across implementations
+4. **Refactor Gradually**: Create reusable components as patterns emerge
+5. **Test Thoroughly**: Ensure each implementation works reliably
+6. **Scale Carefully**: Add features based on practical needs
+7. **Build Framework**: Develop generic solutions from proven patterns
+8. **Maintain Examples**: Keep working implementations as references
+
+## Initial Focus Areas:
+
+1. MS Learn Course Extraction:
+
+   - SC-300 course as primary example
+   - LLM-based extraction patterns
+   - Content structure analysis
+   - Export format definition
+
+2. Pattern Storage:
+
+   - Document successful selectors
+   - Store extraction configurations
+   - Enable pattern reuse
+   - Track pattern effectiveness
+
+3. Basic Utilities:
+   - Command-line interface
+   - Configuration management
+   - Error handling
+   - Results storage
 
 ## Installation and Setup:
 
@@ -93,4 +138,4 @@ All tasks are in the tasks.md file. Once you have completed a task, mark it as [
        asyncio.run(main())
    ```
 
-This project will leverage Crawl4AI's latest features to create a powerful, flexible framework for web data collection that can be easily adapted to various use cases while maintaining high performance and scalability. The two-phase extraction approach ensures cost-effectiveness by minimizing LLM usage while still benefiting from its pattern recognition capabilities.
+This project will evolve from specific implementations to a comprehensive framework, ensuring that each component is validated through real-world usage before being generalized. This approach ensures practical utility while building toward a flexible, reusable system.
