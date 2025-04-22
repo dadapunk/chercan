@@ -52,14 +52,24 @@ All tasks are in the tasks.md file. Once you have completed a task, mark it as [
 - Implement LLM-powered schema generation for automatic extraction templates
 - Configure LLMContentFilter for high-quality, focused markdown generation
 
+### 8. Two-Phase Extraction Approach:
+
+- **Phase 1 - Pattern Learning**: Use LLM to identify patterns, selectors, and data locations
+- **Phase 2 - Direct Extraction**: Apply learned patterns for efficient extraction without LLM dependency
+- Store extraction configurations for reuse and continual refinement
+- Implement incremental updates by comparing extracted patterns against known patterns
+
 ## Implementation Approach:
 
 1. **Core Configuration**: Set up Crawl4AI with the Apache 2.0 license attribution requirements
 2. **Crawler Selection**: Implement both browser-based and HTTP-only crawlers for different use cases
 3. **Data Processing Pipeline**: Configure extraction, filtering, and export processes
-4. **Deployment Options**: Create Docker configurations for scalable deployment
-5. **CLI Integration**: Implement command-line interfaces for easy operation
-6. **Documentation**: Create comprehensive documentation for customization and extension
+4. **Pattern Learning System**: Implement LLM-based pattern identification and selector generation
+5. **Pattern Storage**: Create persistence layer for storing identified extraction patterns
+6. **Direct Extraction**: Build efficient extraction pipeline using stored patterns without LLM dependency
+7. **Deployment Options**: Create Docker configurations for scalable deployment
+8. **CLI Integration**: Implement command-line interfaces for easy operation
+9. **Documentation**: Create comprehensive documentation for customization and extension
 
 ## Installation and Setup:
 
@@ -83,4 +93,4 @@ All tasks are in the tasks.md file. Once you have completed a task, mark it as [
        asyncio.run(main())
    ```
 
-This project will leverage Crawl4AI's latest features to create a powerful, flexible framework for web data collection that can be easily adapted to various use cases while maintaining high performance and scalability.
+This project will leverage Crawl4AI's latest features to create a powerful, flexible framework for web data collection that can be easily adapted to various use cases while maintaining high performance and scalability. The two-phase extraction approach ensures cost-effectiveness by minimizing LLM usage while still benefiting from its pattern recognition capabilities.
